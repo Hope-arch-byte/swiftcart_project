@@ -44,7 +44,6 @@ const GetProducts = () => {
   return (
     <div className='row'>
 
-      <h1>Available Products</h1>
       <p className='text-warning'>{loading}</p>
       <p className='text-danger'>{error}</p>
 
@@ -71,6 +70,7 @@ const GetProducts = () => {
           </div>
 
         </div>
+        <br />
         
       </div>
       ))}

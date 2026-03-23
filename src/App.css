@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -14,9 +14,9 @@
   }
 }
 
-.App-header {
-  background-color: #0e0e33;
-  min-height: 10vh;
+#App-header {
+  background-color: white;
+  min-height: 8vh;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -41,4 +41,28 @@
   text-decoration: none;
   padding: 10px;
   color: black;
+  
+}
+.App-nav:hover{
+  text-decoration: underline;
+  color: #61dafb;
+
+}
+.product_img{
+  width: 230px;
+  height: 200px;
+  object-fit: contain;
+}
+.product_img:hover{
+  transition: 3s;
+  transform: scale(1.2);
+}
+.better{
+  background-color: #3232c4;
+    
+}
+.bold{
+  display: grid;
+  flex-direction: row;
+  position: relative;
 }
