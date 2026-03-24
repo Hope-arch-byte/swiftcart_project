@@ -2,6 +2,7 @@ import React from 'react'
 import { useState ,useEffect} from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 const GetProducts = () => {
@@ -47,6 +48,26 @@ const GetProducts = () => {
       <p className='text-warning'>{loading}</p>
       <p className='text-danger'>{error}</p>
 
+      <div className="row">
+        <div className="col-md-12">
+          <div className="carousel slide" data-bs-ride='carousel' id='mycarousel'>
+            <div className="carousel-inner">
+              <div className="carousel-item">
+                <img src="" alt="" />
+              </div>
+              <div className="carousel-item">
+                <img src="" alt="" />
+              </div>
+              <div className="carousel-item">
+                <img src="" alt="" />
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+
       {/* calling .map() to iterate thru each item */}
        
     {/* this div is for the grid sys */}
@@ -74,6 +95,37 @@ const GetProducts = () => {
         
       </div>
       ))}
+       <footer class="p-3 text-center text-white">
+        <br /><br />
+        <br /><br />
+        <div className="row better">
+          <div className="col-md-4">
+            <h4>About Us</h4>
+            <dl>
+              <dt><b>Swiftcart</b></dt>
+              <dd>We are a company dedicated to selling our customers with quality products at your fingertips wherever you are for free, at a considarable price. Delivery is countrywide and absolutely free provided you are near our picking stations.</dd>
+            </dl>
+          </div>
+          <div className="col-md-4">
+            <h4>How you can contact us</h4>
+            <p>Talk to us via email
+              <br />
+              <b>www.swiftcart.com</b>
+            </p>
+
+          </div>
+          <div className="col-md-4">
+            <h4>Find us</h4>
+            <Link to="https:/www.facebook.com"><img src="images/fb.png" alt="" /></Link>
+            <Link to="https:/www.instagram.com"><img src="images/in.png" alt="" /></Link>
+            <Link to="https:/www.x.com"><img src="images/x.png" alt="" /></Link>
+          </div>
+
+
+        </div>
+        <b className='bg-dark bold'>Developed by Hope &copy; All rights Reserved</b>
+
+      </footer>
     </div>
   )
 }
